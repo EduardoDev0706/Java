@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int codigoItem, quantidadeItem;
+	    double preco = 0.00;
+	    
+	    Scanner myObj = new Scanner(System.in);
+	    
+	    codigoItem = myObj.nextInt();
+	    quantidadeItem = myObj.nextInt();
+	    
+	    if (codigoItem == 1) 
+	    {
+	        preco = 4.00 * quantidadeItem;
+	    }
+	    else if (codigoItem == 2)
+	    {
+	        preco = 4.50 * quantidadeItem;
+	    }
+	    else if (codigoItem == 3)
+	    {
+	        preco = 5.00 * quantidadeItem;
+	    }
+	    else if ( codigoItem == 4)
+	    {
+	        preco = 2.00 * quantidadeItem;
+	    }
+	    else if (codigoItem == 5)
+	    {
+	       preco = 1.50 * quantidadeItem;
+	    }
+	    else
+	    {
+	        System.out.println("Não temos esse produto");
+	        return;
+	    }
+	    
+	    System.out.printf("Total: R$ %.2f\n", preco);
+	    
+	   
+	    myObj.close();
+	  
+	}
+}
